@@ -22,7 +22,7 @@ public class Main {
         // ЗАДАНИЕ 3
 
         System.out.println("Задание 3");
-        caclul_1(5, 6, 7, 8);
+        System.out.println (caclul_1(5, 6, 7, 8));
 
 
         // ЗАДАНИЕ 4
@@ -93,9 +93,10 @@ public class Main {
 
     // МЕТОД ДЛЯ ЗАДАНИЯ 3
 
-    static void caclul_1(double a, double b, double c, double d) {
-        double rez = a * (b + (c / d));
-        System.out.println(rez);
+    static double caclul_1(double a, double b, double c, double d) {
+
+        return (a * (b + (c / d)));
+        
     }
 
 
