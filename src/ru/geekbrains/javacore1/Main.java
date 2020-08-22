@@ -25,7 +25,6 @@ public class Main {
         caclul_1(5, 6, 7, 8);
 
 
-
         // ЗАДАНИЕ 4
 
         System.out.println("Задание 4");
@@ -36,7 +35,8 @@ public class Main {
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-        calcul_2(a, b);
+        System.out.println (calcul_2 (a, b));
+
 
 
         // ЗАДАНИЕ 5
@@ -51,6 +51,17 @@ public class Main {
         calcul_3(a1);
 
 
+        // ЗАДАНИЕ 6
+
+        System.out.println("Задание 6");
+        System.out.println("Введите число:");
+
+        Scanner sc4 = new Scanner(System.in);
+
+        int c = sc4.nextInt();
+
+        System.out.println (calcul_4 (c));
+
 
         // ЗАДАНИЕ 7
 
@@ -62,8 +73,6 @@ public class Main {
         var a2 = sc2.nextLine();
 
         hi_name(a2);
-
-
 
 
         // ЗАДАНИЕ 8
@@ -82,8 +91,6 @@ public class Main {
     }
 
 
-
-
     // МЕТОД ДЛЯ ЗАДАНИЯ 3
 
     static void caclul_1(double a, double b, double c, double d) {
@@ -94,15 +101,11 @@ public class Main {
 
     // МЕТОД ДЛЯ ЗАДАНИЯ 4
 
-    static void calcul_2(int a, int b) {
+    static boolean calcul_2(int a, int b) {
+
         int sum = a + b;
-        if (sum >= 10 & sum <= 20) {
 
-            System.out.println("Условие выполнено. Сумма чисел лежит в пределах от 10 до 20 включительно.");
-        } else {
-
-            System.out.println("Условие НЕ выполнено. Сумма чисел НЕ лежит в пределах от 10 до 20 включительно.");
-        }
+        return (sum >= 10 & sum <= 20);
 
     }
 
@@ -122,6 +125,16 @@ public class Main {
     }
 
 
+    // МЕТОД ДЛЯ ЗАДАНИЯ 6
+
+    static boolean calcul_4 (int c) {
+
+        return ( c < 0);
+
+    }
+
+
+
     // МЕТОД ДЛЯ ЗАДАНИЯ 7
 
     static <string> void hi_name(string a2) {
@@ -131,10 +144,9 @@ public class Main {
     }
 
 
-
     // МЕТОД ДЛЯ ЗАДАНИЯ 8
 
-    static void year (int y) {
+    static void year(int y) {
 
         if ((y % 4) > 0) {
 
