@@ -15,7 +15,7 @@ public class Main {
         double var4 = 3.1416;
         float var5 = 3.14f;
         int var6 = 34;
-        long var7 = 4123554;
+        long var7 = 4123554L;
         short var8 = 327;
 
 
